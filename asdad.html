@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+
+ class Square { 
+    getSquare(n) {
+    return n ** 2;}}
+class Hypotenuse extends Square {
+    getHypotenuse(a, b) {
+        let x = super.getSquare(a);
+        let y = super.getSquare(b);
+        return (x + y) ** 0.5;}}
+let h = new Hypotenuse();
+let a = 3, b = 4;
+let c = h.getHypotenuse(a, b);
+console.log(`直角三角形三条边分别是${a},${b},${c}`);
+    </script>
+</body>
+</html>
